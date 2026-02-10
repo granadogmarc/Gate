@@ -165,8 +165,8 @@ G4double GateDistributionTruncatedGaussian::computeTruncatedSigmaStatic(G4double
     return truncatedSigma * correction;
 }
 
-//___________________________________________________________________
-// Compute the corrected standard deviation after truncation
+//_________________________________________________________________________________________
+// Compute the corrected standard deviation after truncation with the exponential correction
 G4double GateDistributionTruncatedGaussian::computeTruncatedSigma() const{
     double lowLim_std = (m_lowLimit - m_Mu) / m_Sigma;
     double hiLim_std = (m_highLimit - m_Mu) / m_Sigma;
